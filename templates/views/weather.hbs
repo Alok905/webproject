@@ -18,14 +18,14 @@
           </div>
           <div class="result_div">
             <div class="curr_date">
-              <p class="day" id="day">Tuesday</p>
-              <p class="date" id="date">13 Oct</p>
+              <p class="day" id="day">Tue</p>
+              <p class="date" id="date">27 Oct</p>
             </div>
             <div class="result_temp">
-              <p class="city_name" id="city_name">Pun, I</p>
+              <p class="city_name" id="city_name"></p>
               <div class="temp_div">
-                <p class="temp" id="temp">22.27°C</p>
-                <p class="weather_status" id="temp_status"><i class="fa-solid fa-sun weather_status"></i></p>
+                <p class="temp" id="temp"></p>
+                <p class="weather_status" id="temp_status"></p>
                 
               </div>
             </div>
@@ -37,7 +37,52 @@
     <!-- footer code -->
     {{>footer}}
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js">
+        let day=document.getElementById('day');
+        const getCurrentDay = () => {
+        let week = new Array(7);
+        week[0] = "Sun";
+        week[1] = "Mon";
+        week[2] = "Tue";
+        week[3] = "Wed";
+        week[4] = "Thur";
+        week[5] = "Fri";
+        week[6] = "Sat";
+
+        let currenttime = new Date();
+        let days = week[currenttime.getDay()];
+        
+        console.log(days);
+        day.innerText=weeks[days];
+      };
+      
+      const getCurrentTime = () => {
+        var months = [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "June",
+          "July",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
+        var now = new Date();
+        var month = months[now.getMonth() + 1];
+        var date = now.getDate();
+    
+         let today_day=document.getElementById('date');
+         today_day.innerText=`${date} ${month}`;
+      }
+      
+        getCurrentDay();
+        getCurrentTime();
+    console.log("Hello");
+    </script>
   </body>
 
 </html>

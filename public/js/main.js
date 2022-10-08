@@ -42,4 +42,5 @@ input_city.addEventListener("change", (event) => {
   event.preventDefault();
   city_name.innerText = "";
   temp.innerText = "";
+  temp_status.innerText = "";
 });
