@@ -1,0 +1,43 @@
+<html lang="en">
+
+  <head>
+    {{>headerlinks}}
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    {{>navbar}}
+    <!-- Main Header -->
+    <div class="container-fluid main-menu main-menu-body">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="input_div">
+            <input type="text" placeholder="Enter your city name.." class="input_city mx-auto" id="input_city">
+            <button class="btn_search" id="btn_search">search</button>
+          </div>
+          <div class="result_div">
+            <div class="curr_date">
+              <p class="day" id="day">Tuesday</p>
+              <p class="date" id="date">13 Oct</p>
+            </div>
+            <div class="result_temp">
+              <p class="city_name" id="city_name">Pun, I</p>
+              <div class="temp_div">
+                <p class="temp" id="temp">22.27°C</p>
+                <p class="weather_status" id="temp_status"><i class="fa-solid fa-sun weather_status"></i></p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer code -->
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
