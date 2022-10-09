@@ -163,32 +163,6 @@ footer p {
 
 
 
-/* responsive code */
-@media (max-width:768px) {
-    body {
-        height: fit-content;
-    }
-
-    .main_header_left {
-        height: auto;
-        margin: 5rem 0;
-    }
-
-    .main_header_left {
-        height: auto;
-        margin-top: 3rem;
-    }
-
-    .main_header_right .img-fluid {
-        max-height: 80% !important;
-    }
-
-    .temp_div {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
 
 
 /* weather page */
@@ -280,6 +254,7 @@ footer p {
     align-items: center;
 }
 
+
 @media (max-width:1350px) {
     .input_div {
         width: 80%;
@@ -287,5 +262,48 @@ footer p {
 
     .result_div {
         width: 70%;
+    }
+}
+
+/* responsive code */
+@media (max-width:768px) {
+    body {
+        height: fit-content;
+    }
+
+    .main_header_left {
+        height: auto;
+        margin: 5rem 0;
+    }
+
+    .main_header_left {
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .main_header_right .img-fluid {
+        max-height: 80% !important;
+    }
+
+    .temp_div {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .input_div {
+        width: 100%;
+    }
+
+    .result_div {
+        width: 100%;
+    }
+
+    .input_city {
+        font-size: 1.6rem;
+    }
+
+    .btn_search {
+        font-size: 1.6rem;
     }
 }
